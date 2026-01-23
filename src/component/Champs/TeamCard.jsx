@@ -1,5 +1,13 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import RizwanBahi from "../../assets/Rizwan BHai.jpg"
+import AsadBahi from "../../assets/Asad Bhai.jpg"
+import Irtiza from "../../assets/Irteza.jpg"
+import Arham from "../../assets/Arham.jpg"
+import Saif from "../../assets/Saif.jpg"
+import Sharoon from "../../assets/Sharon.jpg"
+import Ali from "../../assets/Ali.jpg"
+import Umair from "../../assets/Umair.jpg"
 import "./TeamCard.css";
 
 /* ===== LOCAL DATA (same file) ===== */
@@ -9,8 +17,7 @@ const teamData = [
     name: "Rizwan ul Haq",
     span: "The Architect",
     role: "Founder CEO",
-    image:
-      "https://dev254.kodesolution.com/nexella/wp-content/uploads/2025/10/Img2.jpg",
+    image: RizwanBahi,
     socials: {
       facebook: "#",
       linkedin: "https://www.linkedin.com/in/rizwan-ul-haq-pk/",
@@ -24,8 +31,7 @@ const teamData = [
     role: "Director Of international Sales",
     span: "Deal Hammer",
 
-    image:
-      "https://dev254.kodesolution.com/nexella/wp-content/uploads/2025/10/Img3.jpg",
+    image: AsadBahi,
     socials: {
       facebook: "#",
       linkedin: "https://www.linkedin.com/in/asad-ullah-ghalib/",
@@ -39,8 +45,7 @@ const teamData = [
     role: "Brand and Marketing Manager",
     span: "Story Shaper",
 
-    image:
-      "https://dev254.kodesolution.com/nexella/wp-content/uploads/2025/10/Img4.jpg",
+    image: Irtiza,
     socials: {
       facebook: "#",
       linkedin: "https://www.linkedin.com/in/syed-irtiza-kazmi/",
@@ -48,45 +53,13 @@ const teamData = [
     },
     delay: "400ms",
   },
-
-  {
-    id: 4,
-    name: "Ali Haider",
-    role: "Design Team Lead",
-    span: "Color Commander",
-
-    image:
-      "https://dev254.kodesolution.com/nexella/wp-content/uploads/2025/10/Img1.jpg",
-    socials: {
-      facebook: "#",
-      linkedin: "#",
-      instagram: "#",
-    },
-    delay: "400ms",
-  },
-    {
-    id: 5,
-    name: "Sharoon Khalid",
-    role: "Video Editing Team Lead",
-    span: "Frame Whisperer",
-
-    image:
-      "https://dev254.kodesolution.com/nexella/wp-content/uploads/2025/10/Img1.jpg",
-    socials: {
-      facebook: "https://www.facebook.com/sharoonkhalid06",
-      linkedin: "https://www.facebook.com/sharoonkhalid06",
-      instagram: "https://www.instagram.com/sharoonkhalid06",
-    },
-    delay: "400ms",
-  },
-  {
+ {
     id: 6,
     name: "Arham Mansoor",
     role: "Project Manager",
     span: "Mission Control",
 
-    image:
-      "https://dev254.kodesolution.com/nexella/wp-content/uploads/2025/10/Img1.jpg",
+    image: Arham,
     socials: {
       facebook: "https://www.facebook.com/people/Arham-Mansoor/pfbid02Gn17bDCYRzPjEEAKNX7Q8QrzfPK3gE2RCTJuNSXrC2DiNfAW6GPnR5FwdeZ2jZRYl/?rdid=tsMO7ELMlCUBeL67&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1PyCT6x449%2F",
       linkedin: "#",
@@ -100,23 +73,36 @@ const teamData = [
     role: "Sales Team Lead",
     span: "Wolf of Close Street",
 
-    image:
-      "https://dev254.kodesolution.com/nexella/wp-content/uploads/2025/10/Img1.jpg",
+    image: Saif,
     socials: {
       facebook: "#",
       linkedin: "#",
       instagram: "#",
+    },
+    delay: "400ms",
+  },
+ 
+    {
+    id: 5,
+    name: "Sharoon Khalid",
+    role: "Video Editing Team Lead",
+    span: "Frame Whisperer",
+
+    image: Sharoon,
+    socials: {
+      facebook: "https://www.facebook.com/sharoonkhalid06",
+      linkedin: "https://www.facebook.com/sharoonkhalid06",
+      instagram: "https://www.instagram.com/sharoonkhalid06",
     },
     delay: "400ms",
   },
   {
-    id: 8,
-    name: "Daniyal Zahid",
-    role: "Head of HR",
-    span: "The People Engine",
+    id: 4,
+    name: "Ali Haider",
+    role: "Design Team Lead",
+    span: "Color Commander",
 
-    image:
-      "https://dev254.kodesolution.com/nexella/wp-content/uploads/2025/10/Img1.jpg",
+    image: Ali,
     socials: {
       facebook: "#",
       linkedin: "#",
@@ -124,6 +110,21 @@ const teamData = [
     },
     delay: "400ms",
   },
+  
+ {
+  id: 8,
+  name: "Umair Ali",
+  role: "Website Developer",
+  span: "The Tech Engine",
+
+  image: Umair,
+  socials: {
+    facebook: "#",
+    linkedin: "#",
+    instagram: "#"
+  },
+  delay: "400ms"
+}
 ];
 
 /* ===== COMPONENT ===== */
