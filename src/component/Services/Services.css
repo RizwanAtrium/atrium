@@ -121,9 +121,11 @@ box-shadow: 0px 18px 25px #00000040 !important;
   border-radius: 16px;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
   color: #fff;
-  animation: scaleFade 0.35s ease;
+  --card-base-x: 0px;
+  --card-drift: 0px;
+  animation: fadeIn 0.35s ease, driftX 12s ease-in-out infinite;
   z-index: 10;
-  /* transform: translateY(0); */
+  transform: translateX(calc(var(--card-base-x) + var(--card-drift)));
 
   
   padding-left: 0 !important;
@@ -136,7 +138,7 @@ box-shadow: 0px 18px 25px #00000040 !important;
 .service-click-card.bottom {
   left: 50%;
   top: 110%;
-  transform: translateX(-50%);
+  --card-base-x: -50%;
 }
 
 .service-click-card.right {
@@ -144,18 +146,38 @@ box-shadow: 0px 18px 25px #00000040 !important;
   display: block;
 }
 
+.service-click-card.left {
+  animation-delay: 0s, 0.2s;
+}
 
-@keyframes scaleFade {
+.service-click-card.right {
+  animation-delay: 0s, 0.6s;
+}
+
+.service-click-card.bottom {
+  animation-delay: 0s, 0.4s;
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: scale(0.95);
   }
   to {
     opacity: 1;
-    transform: scale(1);
   }
 }
 
+@keyframes driftX {
+  0% {
+    --card-drift: 0px;
+  }
+  50% {
+    --card-drift: 10px;
+  }
+  100% {
+    --card-drift: 0px;
+  }
+}
 
 
 
@@ -166,6 +188,7 @@ box-shadow: 0px 18px 25px #00000040 !important;
   border-radius: 0.45rem;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  animation: floatY 8s ease-in-out infinite;
 
 }
 .project-active__title {
@@ -197,6 +220,24 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 }
 
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-click-card,
+  .project-active__thumb {
+    animation: none;
+  }
+}
 
 
 
@@ -234,7 +275,6 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     top: auto;
     left: auto;
     right: auto;
-    transform: none;
     width: 100%;
     max-width: 420px;
     height: auto;
