@@ -5,6 +5,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import headset from '../../assets/Consaltation2.png';
 import pro from '../../assets/graphpro.png';
 import emailjs from 'emailjs-com';
+import Footer from '../../component/Footer/Footer';
 function MoreServices() {
   const formRef = useRef();
 
@@ -220,6 +221,7 @@ function MoreServices() {
             </Row>
           </Container>
         </section>
+        <Footer transparent />
       </section>
     </>
   );

@@ -230,6 +230,107 @@ vertical-align: middle;
   z-index: 2;
 }
 
+@media (max-width: 1024px) {
+  .marketing-title {
+    font-size: 72px;
+    line-height: 1.1;
+  }
+
+  .boldp {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .seo-titles {
+    font-size: 62px;
+    line-height: 1.1;
+  }
+
+  .web-titles {
+    font-size: 56px;
+    line-height: 1.1;
+  }
+
+  .graph-titles {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+
+  .contact-title {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+
+  .hero-image {
+    width: 420px !important;
+  }
+
+  .marketerbg-image .col-lg-8,
+  .marketerbg-image .col-lg-4,
+  .seobg .col-lg-8,
+  .seobg .col-lg-4,
+  .webbg-image .col-lg-8,
+  .webbg-image .col-lg-4,
+  .probg .col-lg-8,
+  .probg .col-lg-4,
+  .videobg-image .col-lg-8,
+  .videobg-image .col-lg-4,
+  .desbg-image .col-lg-8,
+  .desbg-image .col-lg-4,
+  .cusbg-image .col-lg-8,
+  .cusbg-image .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .marketerbg-image .text-lg-end,
+  .seobg .text-lg-end,
+  .webbg-image .text-lg-end,
+  .probg .text-lg-end,
+  .videobg-image .text-lg-end,
+  .desbg-image .text-lg-end,
+  .cusbg-image .text-lg-end {
+    text-align: center !important;
+  }
+
+  .marketerbg-image .image-wrapper,
+  .seobg .image-wrapper,
+  .webbg-image .image-wrapper,
+  .probg .image-wrapper,
+  .videobg-image .image-wrapper,
+  .desbg-image .image-wrapper,
+  .cusbg-image .image-wrapper {
+    margin-top: 24px;
+  }
+
+  .desbg-image .px-lg-5,
+  .cusbg-image .px-lg-5,
+  .marketerbg-image .px-lg-5,
+  .webbg-image .px-lg-5,
+  .videobg-image .px-lg-5,
+  .probg .px-lg-5,
+  .seobg .px-lg-5 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .desbg-image .mx-lg-5,
+  .cusbg-image .mx-lg-5,
+  .marketerbg-image .mx-lg-5,
+  .webbg-image .mx-lg-5,
+  .videobg-image .mx-lg-5,
+  .probg .mx-lg-5,
+  .seobg .mx-lg-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 @media (max-width: 768px) {
   .marketerbg-image {
     background-image: url("../../assets/marketing_bgmob.png");
@@ -245,19 +346,19 @@ vertical-align: middle;
 
   .videobg-image {
     background-image: url("../../assets/video_bgmob.png");
-    background-position: center;
+    background-position: left center;
     background-size: cover;
   }
 
   .webbg-image {
     background-image: url("../../assets/wed_bgmob.png");
-    background-position: center;
+    background-position: right center;
     background-size: cover;
   }
 
   .cusbg-image {
     background-image: url("../../assets/customer_bgmob.png");
-    background-position: center;
+    background-position: right center;
     background-size: cover;
   }
   .seobg {

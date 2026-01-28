@@ -67,24 +67,37 @@ vertical-align: middle;
 /* IMPORTANT: reference container */
 .visual {
     position: relative;
-    width: 360px;
+    width: 640px;
+    height: 470px;
     margin: auto;
 }
 
 .choose-model {
-    width: 300px;
-    height: 360px;
-    position: relative;
+    width: 490px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 40px;
     z-index: 1;
     animation: floatY 2.4s ease-in-out infinite;
+}
+
+.choose-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 420px;
+    height: auto;
+    z-index: 1;
 }
 
 /* STAT CARDS */
 
 .stat-card-exact {
     position: absolute;
-    width: 206px;
-    height: 120px;
+    width: 200px;
+    height: 110px;
     z-index: 2;
     animation: floatX 2.9s ease-in-out infinite;
 }
@@ -136,26 +149,26 @@ vertical-align: middle;
 /* DESKTOP POSITIONS */
 
 .s1 {
-    top: 120px;
-    left: -180px;
+    top: 170px;
+    left: 70px;
     animation-delay: 0.2s;
 }
 
 .s2 {
-    top: 50px;
-    right: -70px;
+    top: 70px;
+    right: 0;
     animation-delay: 0.6s;
 }
 
 .s3 {
-    bottom: 175px;
-    right: -40px;
+    top: 240px;
+    right: -20px;
     animation-delay: 0.4s;
 }
 
 .s4 {
-    bottom: 70px;
-    left: -130px;
+    bottom: 30px;
+    left: 110px;
     animation-delay: 0.8s;
 }
 
@@ -194,6 +207,59 @@ vertical-align: middle;
    RESPONSIVE
 ===================== */
 
+/* Tablet landscape (keep desktop-like two-column layout) */
+@media (max-width: 1024px) {
+
+    .left {
+        padding-left: 50px;
+    }
+
+    .title {
+        font-size: 84px;
+        line-height: 1.05;
+    }
+
+    .visual {
+        width: 520px;
+        height: 420px;
+    }
+
+    .choose-model {
+        display: none;
+    }
+
+    .choose-image {
+        display: block;
+        width: 360px;
+        right: 30px;
+    }
+
+    .stat-card-exact {
+        width: 190px;
+        height: 105px;
+    }
+
+    .s1 {
+        top: 140px;
+        left: 50px;
+    }
+
+    .s2 {
+        top: 50px;
+        right: 10px;
+    }
+
+    .s3 {
+        top: 240px;
+        right: 0;
+    }
+
+    .s4 {
+        top: 260px;
+        left: 70px;
+    }
+}
+
 /* Tablets */
 @media (max-width: 992px) {
 
@@ -207,20 +273,43 @@ vertical-align: middle;
 
     .visual {
         width: 300px;
+        height: 320px;
     }
 
     .choose-model {
-        width: 250px;
-        height: 300px;
+        display: none;
+    }
+
+    .choose-image {
+        display: block;
+        width: 240px;
+        right: 0;
     }
 
     .stat-card-exact {
-        width: 180px;
-        height: 110px;
+        width: 160px;
+        height: 92px;
     }
 
-    .s1 { left: -120px; }
-    .s4 { left: -100px; }
+    .s1 {
+        top: 80px;
+        left: -8px;
+    }
+
+    .s2 {
+        top: 10px;
+        right: -8px;
+    }
+
+    .s3 {
+        top: 165px;
+        right: -8px;
+    }
+
+    .s4 {
+        top: 185px;
+        left: -8px;
+    }
 }
 
 /* Mobile */
@@ -268,6 +357,10 @@ vertical-align: middle;
         display: none;
     }
 
+    .choose-image {
+        display: none;
+    }
+
     .stat-card-exact {
         width: 120px;
         height: 78px;
@@ -288,23 +381,23 @@ vertical-align: middle;
 
     /* Cards image ke bilkul upar */
     .s1 {
-        top: 50px;
-        left: -20px;
+        top: 70px;
+        left: -12px;
     }
 
     .s2 {
-        top: 6px;
-        right: -6px;
+        top: 8px;
+        right: -8px;
     }
 
     .s3 {
-        top: 150px;
-        right: -6px;
+        top: 155px;
+        right: -8px;
     }
 
     .s4 {
-        top: 155px;
-        left: -20px;
+        top: 178px;
+        left: -12px;
     }
 }
 
@@ -330,23 +423,23 @@ vertical-align: middle;
     }
 
     .s1 {
-        top: 30px;
-        left: -30px;
+        top: 55px;
+        left: -14px;
     }
 
     .s2 {
-        top: -10px;
-        right: -25px;
+        top: 0;
+        right: -10px;
     }
 
     .s3 {
-        bottom: 60px;
-        right: -20px;
+        top: 140px;
+        right: -10px;
     }
 
     .s4 {
-        bottom: 10px;
-        left: -25px;
+        top: 165px;
+        left: -14px;
     }
 }
 

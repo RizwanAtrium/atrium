@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useEffect, useRef, useState } from 'react';
 import './Choose.css';
 import statueModel from '../../assets/marble+bust+3d+model.glb';
+import chooseImg from '../../assets/Choose.png';
 
 const AnimatedNumber = ({ value, start }) => {
   const [count, setCount] = useState(0);
@@ -131,11 +132,15 @@ export default function Choose() {
           {/* RIGHT CONTENT */}
           <Col lg={6} className="right">
             <div className="visual">
+              <img
+                src={chooseImg}
+                alt="Choose us visual"
+                className="choose-image"
+              />
               <model-viewer
                 src={statueModel}
                 alt="Marble bust 3D model"
                 className="choose-model"
-                auto-rotate
                 rotation-per-second="18deg"
                 camera-controls
                 disable-zoom

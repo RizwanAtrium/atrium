@@ -2,14 +2,8 @@
   background: #050505;
   color: #d6d6d6;
 }
-
-.footer--transparent {
-  display: none;
-}
-
-.footer.footer--no-bg {
-  background: transparent;
-  background-color: transparent;
+.footer-transparent {
+  background: transparent;    
 }
 
 .footer-inner {

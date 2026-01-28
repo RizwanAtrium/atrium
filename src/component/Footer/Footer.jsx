@@ -2,9 +2,9 @@ import React from 'react'
 import './footer.css'
 import Logo from '../../assets/atruimlogo.png'
 
-const Footer = ({ transparent, noBg }) => {
+const Footer = ({ transparent = false }) => {
     return (
-        <section className={`footer ${transparent ? "footer--transparent" : ""} ${noBg ? "footer--no-bg" : ""}`}>
+        <section className={`footer ${transparent ? "footer-transparent" : ""}`}>
             <div className="footer-inner">
                 <div className="footer-brand">
                     <img className="footer-logo" src={Logo} alt="Atrium Solutions" />

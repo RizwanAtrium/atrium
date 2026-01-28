@@ -197,7 +197,7 @@ export default function ImageCardSlider() {
   className={`project-card__btn ${i === current ? "active" : ""}`}
   onClick={(e) => e.stopPropagation()}
 >
-  <span className="arrow-icon">></span>
+  <span className="arrow-icon">{">"}</span>
 </Link>
 
 
