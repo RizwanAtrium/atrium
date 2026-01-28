@@ -49,6 +49,12 @@ function App() {
 
   const transparentFooter =
     location.pathname !== "/" &&
+    location.pathname !== "/more-services/Marketers" &&
+    location.pathname !== "/more-services/Designers";
+
+  const noBgFooter =
+    !transparentFooter &&
+    location.pathname !== "/" &&
     location.pathname !== "/more-services/Marketers";
 
   return (
@@ -75,7 +81,7 @@ function App() {
         <Route path="/more-services/Customer" element={<MoreServices5 />} />
       </Routes>
 
-      <Footer transparent={transparentFooter}/>
+      <Footer transparent={transparentFooter} noBg={noBgFooter} />
     </>
   );
 }

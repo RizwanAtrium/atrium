@@ -41,7 +41,7 @@ function Navigation() {
             </Nav>
 
             {/* Button */}
-            <NavLink to="/contact" className="contact-nav-btn">
+            <NavLink to="/contact" className="contact-nav-btn d-lg-flex d-none">
               Contact Now
             </NavLink>
 
