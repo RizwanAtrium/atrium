@@ -172,7 +172,8 @@ border-width: 1px;
   position: absolute;
   left: 50%;
   bottom: 20px;               /* 🔽 inactive position */
-  transform: translateX(-50%);
+  --btn-raise: 0px;
+  transform: translateX(-50%) translateY(var(--btn-raise));
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -189,8 +190,14 @@ border-width: 1px;
   transition:
     left 0.5s ease,
     bottom 0.5s ease,
-    transform 0.5s ease;
+    transform 0.5s ease,
+    box-shadow 0.25s ease;
     border: 0.5px solid #fff;
+}
+
+.project-card__btn:hover {
+  --btn-raise: -4px;
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.35);
 }
 
 .arrow-icon {
@@ -208,7 +215,7 @@ border-width: 1px;
   left: auto;
   right: 20px;               /* ➡ active position */
   bottom: 42%;
-  transform: translateY(50%);
+  transform: translateY(50%) translateY(var(--btn-raise));
   
 }
 

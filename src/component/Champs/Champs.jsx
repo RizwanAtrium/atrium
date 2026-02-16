@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Row, Col, Button } from "react-bootstrap";
-import { Play } from 'lucide-react';
+import { Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import TeamCard from './TeamCard';
 function Champs() {
   return (
@@ -12,13 +12,28 @@ function Champs() {
             data-aos-offset="500"
             data-aos-duration="1500">Our Team</span>
 
-          <h1 className="title" data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
-            data-aos-duration="2000">
-            Champs
-            <span>.</span>
-          </h1>
+          <div className="champs-header">
+            <h1
+              className="title"
+              data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="2000"
+            >
+              Champs
+              <span>.</span>
+            </h1>
+            <Link
+              to="/team"
+              className="champs-view-btn"
+              data-aos="fade-left"
+              data-aos-anchor="#example-anchor"
+              data-aos-offset="500"
+              data-aos-duration="2200"
+            >
+              View Teams
+            </Link>
+          </div>
 
           <div className="d-flex mt-4" style={{ justifyContent: "space-between" }}>
             <p data-aos="fade-left"

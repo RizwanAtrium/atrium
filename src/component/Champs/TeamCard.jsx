@@ -4,10 +4,7 @@ import RizwanBahi from "../../assets/Rizwan BHai.jpg"
 import AsadBahi from "../../assets/Asad Bhai.jpg"
 import Irtiza from "../../assets/Irteza.jpg"
 import Arham from "../../assets/Arham.jpg"
-import Saif from "../../assets/Saif.jpg"
-import Sharoon from "../../assets/Sharon.jpg"
-import Ali from "../../assets/Ali.jpg"
-import Umair from "../../assets/Umair.jpg"
+import MAbrar from "../../assets/Abrar Ali.jpg"
 import "./TeamCard.css";
 
 /* ===== LOCAL DATA (same file) ===== */
@@ -55,11 +52,11 @@ const teamData = [
   },
  {
     id: 6,
-    name: "Arham Mansoor",
-    role: "Project Manager",
-    span: "Mission Control",
+    name: "Muhammad Abrar",
+    role: "HR Manager",
+    span: "Workforce Architect",
 
-    image: Arham,
+    image: MAbrar,
     socials: {
       facebook: "https://www.facebook.com/people/Arham-Mansoor/pfbid02Gn17bDCYRzPjEEAKNX7Q8QrzfPK3gE2RCTJuNSXrC2DiNfAW6GPnR5FwdeZ2jZRYl/?rdid=tsMO7ELMlCUBeL67&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1PyCT6x449%2F",
       linkedin: "#",
@@ -67,64 +64,7 @@ const teamData = [
     },
     delay: "400ms",
   },
-  {
-    id: 7,
-    name: "Saif ullah Khalid",
-    role: "Sales Team Lead",
-    span: "Wolf of Close Street",
-
-    image: Saif,
-    socials: {
-      facebook: "#",
-      linkedin: "#",
-      instagram: "#",
-    },
-    delay: "400ms",
-  },
  
-    {
-    id: 5,
-    name: "Sharoon Khalid",
-    role: "Video Editing Team Lead",
-    span: "Frame Whisperer",
-
-    image: Sharoon,
-    socials: {
-      facebook: "https://www.facebook.com/sharoonkhalid06",
-      linkedin: "https://www.facebook.com/sharoonkhalid06",
-      instagram: "https://www.instagram.com/sharoonkhalid06",
-    },
-    delay: "400ms",
-  },
-  {
-    id: 4,
-    name: "Ali Haider",
-    role: "Design Team Lead",
-    span: "Color Commander",
-
-    image: Ali,
-    socials: {
-      facebook: "#",
-      linkedin: "#",
-      instagram: "#",
-    },
-    delay: "400ms",
-  },
-  
- {
-  id: 8,
-  name: "Umair Ali",
-  role: "Website Developer",
-  span: "The Tech Engine",
-
-  image: Umair,
-  socials: {
-    facebook: "#",
-    linkedin: "#",
-    instagram: "#"
-  },
-  delay: "400ms"
-}
 ];
 
 /* ===== COMPONENT ===== */

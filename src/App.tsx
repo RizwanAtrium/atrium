@@ -17,6 +17,7 @@ import MoreServices2 from "./pages/MoreServices/MoreServices2";
 import MoreServices3 from "./pages/MoreServices/MoreServices3";
 import MoreServices4 from "./pages/MoreServices/MoreServices4";
 import MoreServices5 from "./pages/MoreServices/MoreServices5";
+import Team from "./pages/Team/Team";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -49,7 +50,7 @@ function App() {
 
   const showFooter =
     location.pathname === "/" ||
-    location.pathname === "/more-services/Marketers";
+    location.pathname === "/more-services/Marketers"
 
    
 
@@ -76,6 +77,7 @@ function App() {
         <Route path="/more-services/Video" element={<MoreServices3 />} />
         <Route path="/more-services/Web" element={<MoreServices4 />} />
         <Route path="/more-services/Customer" element={<MoreServices5 />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
 
       {showFooter && <Footer />}

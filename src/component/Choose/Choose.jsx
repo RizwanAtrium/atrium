@@ -137,15 +137,6 @@ export default function Choose() {
                 alt="Choose us visual"
                 className="choose-image"
               />
-              <model-viewer
-                src={statueModel}
-                alt="Marble bust 3D model"
-                className="choose-model"
-                rotation-per-second="18deg"
-                camera-controls
-                disable-zoom
-                shadow-intensity="0.35"
-              />
               <Stat value="64" label="Award Winning" className="s1" />
               <Stat value="264" label="Satisfied Clients" className="s2" />
               <Stat value="574" label="Successful Projects" className="s3" />

@@ -36,7 +36,7 @@ vertical-align: middle;
 }
 
 .title span {
-    color: #8f3dff;
+    color: #A150FF;
 }
 
 .intro {
@@ -72,22 +72,12 @@ vertical-align: middle;
     margin: auto;
 }
 
-.choose-model {
-    width: 490px;
-    height: 500px;
-    position: absolute;
-    top: 0;
-    right: 40px;
-    z-index: 1;
-    animation: floatY 2.4s ease-in-out infinite;
-}
-
 .choose-image {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     right: 40px;
-    width: 420px;
+    width: 360px;
     height: auto;
     z-index: 1;
 }
@@ -119,12 +109,13 @@ vertical-align: middle;
     border-radius: 12px;
     backdrop-filter: blur(10px);
     transform-style: preserve-3d;
-    transform: perspective(700px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
-    transition: transform 140ms ease, box-shadow 140ms ease;
+    transform: perspective(700px) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) scale(var(--card-scale, 1));
+    transition: transform 180ms ease, box-shadow 180ms ease;
     will-change: transform;
 }
 
 .stat-card-exact:hover .stat-card-inner {
+    --card-scale: 1.25;
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
 }
 
@@ -137,7 +128,7 @@ vertical-align: middle;
 }
 
 .stat-number .plus {
-    color: #8f3dff;
+    color: #A150FF;
     margin-left: 2px;
 }
 
@@ -224,12 +215,7 @@ vertical-align: middle;
         height: 420px;
     }
 
-    .choose-model {
-        display: none;
-    }
-
     .choose-image {
-        display: block;
         width: 360px;
         right: 30px;
     }
@@ -276,12 +262,7 @@ vertical-align: middle;
         height: 320px;
     }
 
-    .choose-model {
-        display: none;
-    }
-
     .choose-image {
-        display: block;
         width: 240px;
         right: 0;
     }
@@ -353,10 +334,6 @@ vertical-align: middle;
         height: 300px;
     }
 
-    .choose-model {
-        display: none;
-    }
-
     .choose-image {
         display: none;
     }
@@ -366,8 +343,7 @@ vertical-align: middle;
         height: 78px;
     }
 
-    .stat-card-exact,
-    .choose-model {
+    .stat-card-exact {
         animation: none !important;
     }
 
@@ -412,10 +388,6 @@ vertical-align: middle;
         width: 220px;
     }
 
-    .choose-model {
-        width: 190px;
-        height: 230px;
-    }
 
     .stat-card-exact {
         width: 130px;
@@ -449,11 +421,63 @@ vertical-align: middle;
     gap: 12px;
 }
 
+.champs-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
+
+.champs-header .title {
+    margin: 0;
+}
+
+.champs-view-btn {
+    padding: 10px 26px;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    background: linear-gradient(
+        158.11deg,
+        rgba(161, 80, 255, 0) 9.72%,
+        #A150FF 178.93%
+    );
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.champs-view-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.4);
+    border-color: #fff;
+}
+
+.champs-view-btn:focus-visible {
+    outline: 2px solid rgba(143, 61, 255, 0.7);
+    outline-offset: 2px;
+}
+
 @media (max-width: 768px) {
     .cases-section .d-flex,
     .champs-section .d-flex,
     .career-section .d-flex {
         flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .champs-header {
         align-items: flex-start;
     }
 }

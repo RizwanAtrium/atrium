@@ -1,6 +1,9 @@
 import { Lock } from "lucide-react";
-import "./Benefits.css"
-import ElectricBorder from './ElectricBorder.jsx'
+import "./Benefits.css";
+import ElectricBorder from "./ElectricBorder.jsx";
+
+const APPLY_LINK =
+  "https://docs.google.com/forms/u/0/d/1f3ANSC4xAdwBsEAvTAExZS1VVW-OOUBqEe7taON9WFM/viewform?edit_requested=true";
 function Benefits() {
   return (
     <div className="benefits-wrapper">
@@ -16,18 +19,28 @@ function Benefits() {
             <h4>Graphics Designer</h4>
           <p>Designers with style</p>
           </div>
-           <button to="/contact" className="contact-ben-btn mt-4">
-                        Apply Now
-                      </button>
+           <a
+             href={APPLY_LINK}
+             target="_blank"
+             rel="noopener noreferrer"
+             className="contact-ben-btn mt-4"
+           >
+             Apply Now
+           </a>
         </div>
         <div className="benefit-card">
           <div>
           <h4>Video Editor</h4>
           <p>Editors with rhythm</p>
           </div>
-           <button to="/contact" className="contact-ben-btn mt-4">
-              Apply Now
-            </button>
+           <a
+             href={APPLY_LINK}
+             target="_blank"
+             rel="noopener noreferrer"
+             className="contact-ben-btn mt-4"
+           >
+             Apply Now
+           </a>
         </div>
        
       </div>
@@ -37,27 +50,42 @@ function Benefits() {
           <h4>Sales Excutive</h4>
           <p>Sales with communication</p>
           </div>
-           <button to="/contact" className="contact-ben-btn mt-4">
-              Apply Now
-            </button>
+           <a
+             href={APPLY_LINK}
+             target="_blank"
+             rel="noopener noreferrer"
+             className="contact-ben-btn mt-4"
+           >
+             Apply Now
+           </a>
         </div>
         <div className="benefit-card">
           <div>
           <h4>Chat Support </h4>
           <p>Support heroes</p>
           </div>
-           <button to="/contact" className="contact-ben-btn mt-4">
-              Apply Now
-            </button>
+           <a
+             href={APPLY_LINK}
+             target="_blank"
+             rel="noopener noreferrer"
+             className="contact-ben-btn mt-4"
+           >
+             Apply Now
+           </a>
         </div>
         <div className="benefit-card">
           <div>
           <h4>Content Creater</h4>
           <p>Content with storytellers</p>
           </div>
-           <button to="/contact" className="contact-ben-btn mt-4">
-              Apply Now
-            </button>
+           <a
+             href={APPLY_LINK}
+             target="_blank"
+             rel="noopener noreferrer"
+             className="contact-ben-btn mt-4"
+           >
+             Apply Now
+           </a>
         </div>
       </div>
 
@@ -72,9 +100,14 @@ function Benefits() {
               <h4>Locked Jobs</h4>
               <p>This job is locked</p>
               </div>
-               <button to="/contact" className="contact-ben-btn mt-4">
-              Apply Now
-            </button>
+               <a
+                 href={APPLY_LINK}
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="contact-ben-btn mt-4"
+               >
+                 Apply Now
+               </a>
             </div>
 
           

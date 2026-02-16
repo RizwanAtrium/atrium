@@ -189,8 +189,12 @@ export default function ImageCardSlider() {
                   alt=""
                 />
                 <div>
-                  <h3 className="project-card__title">{card.title}</h3>
-                  <p className="project-card__desc">{card.desc}</p>
+                  <h3 className="project-card__title">
+                    {card.title}
+                  </h3>
+                  <p className="project-card__desc">
+                    {card.desc}
+                  </p>
                  
    <Link
   to={`/more-services/${card.id}`}

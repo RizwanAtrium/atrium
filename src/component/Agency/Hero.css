@@ -67,11 +67,11 @@ vertical-align: middle;
 }
 
 .text-purple {
-  color: #8b5cf6;
+  color: #A150FF;
 }
 
 .hero-title .dot {
-  color: #8b5cf6;
+  color: #A150FF;
 }
 
 .hero-text {
@@ -99,14 +99,14 @@ vertical-align: middle;
 .text-type {
   display: inline-block;
   white-space: pre-wrap;
-  color: #8b5cf6;
+  color: #A150FF;
 }
 
 .text-type__cursor {
   margin-left: 0.25rem;
   display: inline-block;
   opacity: 1;
-  color: #8b5cf6;
+  color: #A150FF;
 
 }
 
