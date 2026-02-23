@@ -5,6 +5,7 @@
   padding: 140px 0 0;
   /* font-family: "Inter", sans-serif; */
   position: relative;
+  isolation: isolate;
   overflow: hidden;
 }
 
@@ -12,20 +13,35 @@
   color: #A150FF;
 }
 
+.team-page {
+  position: relative;
+  background-image: url("../../assets/teams bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: top center;
+  overflow: hidden;
+}
+
+/* Dark overlay (MoreServices style) */
 .team-page::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../assets/teams bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.2;
+  background-color: #050505;
+  opacity: 0.4;
   z-index: 0;
+  pointer-events: none;
 }
+
 
 .team-page > .container,
 .team-page > .container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+.team-page > section {
   position: relative;
   z-index: 1;
 }
@@ -37,7 +53,7 @@
 
 .team-hero-subtitle {
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1.6px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);

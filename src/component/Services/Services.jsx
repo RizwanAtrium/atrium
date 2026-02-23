@@ -1,5 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import SocialMedia from '../../assets/socialmedia.png';
+import Graphics from '../../assets/graphics.png';
+import videos from '../../assets/videos.png';
+import Content from '../../assets/contants.png';
+import UIUX from '../../assets/uiux.png';
+import Website from '../../assets/website.png';
+import SEO from '../../assets/seos.png';
 import './Services.css';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -9,56 +16,49 @@ const services = [
     title: 'Social Media Marketing',
     pos: 'left',
     desc: 'Grow your brand on social platforms.',
-    thumb:
-      'https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-art.webp?w=480',
+    thumb: SocialMedia,
   },
   {
     id: 'Designers',
     title: 'Graphic Designing',
     pos: 'right',
     desc: 'Creative designs that define your brand.',
-    thumb:
-      'https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-art.webp?w=480',
+    thumb: Graphics,
   },
   {
     id: 'VFX',
     title: 'Video Editing',
     pos: 'right',
     desc: 'Professional videos for ads & reels.',
-    thumb:
-      'https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-art.webp?w=480',
+    thumb: videos,
   },
   {
     id: 'Content',
     title: 'Content Writing',
     pos: 'left',
     desc: 'SEO friendly and engaging content.',
-    thumb:
-      'https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-art.webp?w=480',
+      thumb: Content,
   },
   {
     id: 'Designers',
     title: 'UI/UX',
     pos: 'right',
     desc: 'Modern and user-focused interfaces.',
-    thumb:
-      'https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-art.webp?w=480',
+    thumb: UIUX,
   },
   {
     id: 'Designers',
     title: 'Web Development',
     pos: 'right',
     desc: 'Fast, scalable and secure websites.',
-    thumb:
-      'https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-art.webp?w=480',
+    thumb: Website,
   },
   {
     id: 'Marketers',
     title: 'SEO (Search Engine Optimization)',
     pos: 'bottom',
     desc: 'Rank higher & get organic traffic.',
-    thumb:
-      'https://cdn-front.freepik.com/home/anon-rvmp/professionals/img-art.webp?w=480',
+    thumb: SEO,
   },
 ];
 
