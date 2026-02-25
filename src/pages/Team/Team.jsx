@@ -116,7 +116,7 @@ const teamGroups = [
     members: [
       {
         id: "biz-1",
-        name: "Muhammad Sajid Manzoor",
+        name: "Sajid Manzoor",
       
         role: "BD Executive",
         image: MuhammadSajidManzoor,
@@ -164,7 +164,6 @@ const teamGroups = [
     {
         id: "sales-1",
         name: "Ali Raza",
-     
         role: "Sales Executive",
         image: Aliraza,
         socials: { linkedin: "https://www.linkedin.com/in/ali-raza-368465380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
@@ -335,7 +334,7 @@ Founder CEO
             </div>
 
          
-          </Col>
+          </Col>,
         </Row>
 
         {teamGroups.map((group, groupIndex) => (
