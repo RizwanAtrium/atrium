@@ -12,6 +12,7 @@ import Ashlay from "../../assets/Ashlay.jpg";
 import HamzaJavaid from "../../assets/Hamza Javaid.jpg";
 import MuhammadSajidManzoor from "../../assets/Muhammad Sajid Manzoor.jpg";
 import HafizNaveedAhmad from "../../assets/Hafiz Naveed Ahmad.jpg";
+import aliabdullah from "../../assets/Ali Abdullah.jpg";
 import Arham from "../../assets/Arham.jpg";
 import Aliraza from "../../assets/Ali raza.jpg";
 import RohanKashif from "../../assets/Rohan Kashif.jpeg";
@@ -26,6 +27,7 @@ import HaronKhalid from "../../assets/Haroon Khalid.jpg";
 import Rizwanulhaq from "../../assets/Rizwan BHai.jpg";
 import AsifAli from "../../assets/Asif Ali.jpg";
 import Footer from "../../component/Footer/Footer";
+
 // import Placeholder29 from "../../assets/placeholder-29.webp";
 // import Ashlay from "../../assets/Ashlay.jpg";
 
@@ -33,6 +35,20 @@ import "../../component/Champs/TeamCard.css";
 import "./Team.css";
 
 const teamGroups = [
+    {
+    title: "Legal Advisor",
+    members: [
+      {
+        id: "email-1",
+        name: "Ali Abdulllah ",
+      
+        role: "Head Of Legal Affairs",
+        image: aliabdullah,
+        socials: { linkedin: "#" },
+      },
+     
+    ],
+  },
   {
     title: "Creative Squad",
     members: [
@@ -45,19 +61,6 @@ const teamGroups = [
           facebook: "#",
           linkedin: "https://www.linkedin.com/in/syed-irtiza-kazmi/",
           instagram: "#",
-        },
-      },
-    
-      {
-        id: "prod-4",
-        name: "Sharoon Khalid",
-      
-        role: "Motion Graphics Designer",
-        image: Sharon,
-        socials: {
-     
-          linkedin: "https://pk.linkedin.com/in/sharoonkhalid06",
-          
         },
       },
       {
@@ -114,20 +117,28 @@ const teamGroups = [
   {
     title: "Revenue Generators",
     members: [
-      {
-        id: "biz-1",
-        name: "Sajid Manzoor",
-      
-        role: "BD Executive",
-        image: MuhammadSajidManzoor,
-        socials: { linkedin: "https://www.linkedin.com/in/muhammad-sajid-manzoor-1a657a213/" },
-      },
+    
       {
         id: "biz-2",
         name: "Hafiz Naveed Ahmad",
         role: "BD Executive",
         image: HafizNaveedAhmad,
         socials: { linkedin: "https://www.linkedin.com/in/saeed-ahmad-244a4813b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+      },
+        {
+        id: "email-1",
+        name: "Naik Muhammad",
+      
+        role: "Email Marketing Lead",
+        image: NaikMuhammad,
+        socials: { linkedin: "https://www.linkedin.com/in/naikmuhammad-dmm" },
+      },
+      {
+        id: "email-2",
+        name: "Hafiz Muhammad Umer",
+        role: "Email Marketer",
+        image: HafizMuhammadUmer,
+        socials: { linkedin: "https://www.linkedin.com/in/hafiz-muhammad-umer2118" },
       },
     ],
   },
@@ -176,22 +187,7 @@ const teamGroups = [
         image: RohanKashif,
         socials: { linkedin: "https://www.linkedin.com/in/rohan-kashif-a72065367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       },
-      {
-        id: "sales-2",
-        name: "Haroon Khalid",
-      
-        role: "Sales Executive",
-        image: HaronKhalid,
-        socials: { linkedin: "#" },
-      },
-      {
-        id: "sales-2",
-        name: "Izma Azam",
-      
-        role: "Sales Executive",
-        image: IzamAzam,
-        socials: { linkedin: "#" },
-      },
+   
     ],
   },
   {
@@ -212,36 +208,10 @@ const teamGroups = [
         image: HassanMuneer,
         socials: { linkedin: "https://www.linkedin.com/in/hassan-muneer-304a1a295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
       },
-      {
-        id: "csr-2",
-        name: "Ammara Zahoor",
-       
-        role: "CSR Executive",
-        image: AmmaraZahoor,
-        socials: { linkedin: "https://www.linkedin.com/in/engr-ammara-zahoor-01a640212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-      },
+   
     ],
   },
-  {
-    title: "Email Marketing Team",
-    members: [
-      {
-        id: "email-1",
-        name: "Naik Muhammad",
-      
-        role: "Email Marketing Lead",
-        image: NaikMuhammad,
-        socials: { linkedin: "https://www.linkedin.com/in/naikmuhammad-dmm" },
-      },
-      {
-        id: "email-2",
-        name: "Hafiz Muhammad Umer",
-        role: "Email Marketer",
-        image: HafizMuhammadUmer,
-        socials: { linkedin: "https://www.linkedin.com/in/hafiz-muhammad-umer2118" },
-      },
-    ],
-  },
+
   {
     title: "HR & Admin Squad",
     members: [
@@ -255,14 +225,6 @@ const teamGroups = [
           linkedin: "https://www.linkedin.com/in/mohammad-abrar-229866361/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BnG2CgvNYRpaEG%2BNRtTLA8w%3D%3D",
          
         },
-      },
-      {
-        id: "email-1",
-        name: "Hamza Qasim",
-      
-        role: "IT Manager",
-        image: HamzaQasim,
-        socials: { linkedin: "https://www.linkedin.com/in/hamza-qasim-886801321/" },
       },
       {
         id: "email-1",
@@ -334,7 +296,7 @@ Founder CEO
             </div>
 
          
-          </Col>,
+          </Col>
         </Row>
 
         {teamGroups.map((group, groupIndex) => (
